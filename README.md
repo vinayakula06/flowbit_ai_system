@@ -1,5 +1,3 @@
----
-
 # 🚀 Multi-Format Autonomous AI System
 
 ## 📌 Objective
@@ -12,7 +10,7 @@ This project implements a *multi-agent AI system* that can:
 * Extract relevant information and **trigger follow-up actions** (e.g., external API calls).
 * Maintain logs for **auditability** and traceability.
 
----
+
 
 ## 🧠 System Architecture
 
@@ -33,7 +31,7 @@ graph TD
     D -- Logs for Audit --> K[Output Logs]
 ```
 
----
+
 
 ## ⚙️ Tech Stack
 
@@ -53,7 +51,7 @@ graph TD
 | Environment Config | python-dotenv                           |
 | Containerization   | Docker                                  |
 
----
+
 
 ## 📁 Project Structure
 
@@ -88,7 +86,7 @@ multi_format_ai/
 └── venv/                          # Python virtual environment
 ```
 
----
+
 
 ## 🧪 Sample Inputs
 
@@ -99,7 +97,7 @@ Located in the `sample_inputs/` folder:
 * `pdf_invoice_sample.pdf` – Invoice document.
 * `pdf_regulation_sample.pdf` – Regulatory document.
 
----
+
 
 ## 🧰 How to Run
 
@@ -108,7 +106,7 @@ Located in the `sample_inputs/` folder:
 * Python 3.8+
 * [Docker](https://www.docker.com/) (optional, for containerized run)
 
----
+
 
 ### 💻 Local Setup
 
@@ -130,7 +128,7 @@ uvicorn main:app --reload
 
 Access the UI at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
----
+
 
 ### 🐳 Docker Setup
 
@@ -142,7 +140,7 @@ docker build -t multi-format-ai .
 docker run -p 8000:8000 multi-format-ai
 ```
 
----
+
 
 ## 🌟 Bonus Features
 
@@ -153,7 +151,7 @@ Implemented via the `tenacity` library within `action_router.py`:
 * Retries up to 3 times with exponential backoff (1s, 2s, 4s).
 * Targets network-related exceptions like `httpx.TimeoutException`, `ConnectError`, etc.
 
----
+
 
 ### ✅ Interactive Web UI
 
@@ -161,14 +159,14 @@ Implemented via the `tenacity` library within `action_router.py`:
 * Upload `.eml`, `.json`, or `.pdf` files from browser.
 * View classification results and routing paths.
 
----
+
 
 ### ✅ Fully Dockerized
 
 * The system includes a **Dockerfile** for easy deployment.
 * Supports consistent execution across different environments.
 
----
+
 
 ## 🧪 Running Tests
 
@@ -176,7 +174,7 @@ Implemented via the `tenacity` library within `action_router.py`:
 pytest test_api.py
 ```
 
----
+
 
 ## 🔮 Future Work
 
@@ -185,11 +183,11 @@ pytest test_api.py
 * Real-time socket-based update streaming in UI.
 * Logging dashboard with analytics.
 
----
+
 
 ## 👨‍💻 Contributors
 
 We welcome contributions! Feel free to fork, improve, or submit issues.
 
----
+
 
