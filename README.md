@@ -192,9 +192,9 @@ We welcome contributions! Feel free to fork, improve, or submit issues.
 ## 📸 Screenshots
 
 ### 📨 Upload Page
-![Upload Page](![Screenshot 2025-06-01 224226](https://github.com/user-attachments/assets/265ffe9f-b5d2-4496-8764-268dd9b236ef))
+(![Screenshot 2025-06-01 224226](https://github.com/user-attachments/assets/265ffe9f-b5d2-4496-8764-268dd9b236ef))
 
 ### 📤 Post-Action Output
-![Post-Action Output](![Screenshot 2025-06-01 224243](https://github.com/user-attachments/assets/6544f328-9c5d-4c5a-ad66-ab940fff0cf7))
+(![Screenshot 2025-06-01 224243](https://github.com/user-attachments/assets/6544f328-9c5d-4c5a-ad66-ab940fff0cf7))
 
 
