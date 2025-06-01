@@ -194,7 +194,16 @@ We welcome contributions! Feel free to fork, improve, or submit issues.
 ### 📨 Upload Page
 ![Screenshot 2025-06-01 224226](https://github.com/user-attachments/assets/265ffe9f-b5d2-4496-8764-268dd9b236ef)
 
-### 📤 Post-Action Output
+### 📤 Post-Action Outputs
+## output for email file:
 ![Screenshot 2025-06-01 224243](https://github.com/user-attachments/assets/6544f328-9c5d-4c5a-ad66-ab940fff0cf7)
+## outputs for pdfs files:
+![image](https://github.com/user-attachments/assets/cff514b9-2849-4752-98f4-41f59b130648)
+![image](https://github.com/user-attachments/assets/2ee93d52-1a09-49e2-91c3-02236f714ed9)
+## output for JSON file:
+![image](https://github.com/user-attachments/assets/b622a7bf-e8ca-41a0-bc30-dd9a1bb359c2)
+
+
+
 
 
