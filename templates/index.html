@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Format AI Agent System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Body and Container Styles */
+        body { 
+            font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; /* Reset default margin */
+            padding: 20px;
+            background-color: #f0f2f5; 
+            color: #333; 
+            line-height: 1.6; 
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+        .container { 
+            max-width: 960px; /* Slightly wider */
+            margin: 20px auto; /* Add margin to top/bottom */
+            background: #ffffff; 
+            padding: 40px; /* More padding */
+            border-radius: 12px; /* Softer corners */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* More pronounced shadow */
+            box-sizing: border-box;
+        }
+
+        /* Typography */
+        h1 { 
+            color: #007bff; 
+            text-align: center; 
+            margin-bottom: 30px; 
+            font-size: 2.5em; /* Larger heading */
+            font-weight: 700;
+        }
+        h2 { 
+            color: #0056b3; 
+            border-bottom: 2px solid #e9ecef; /* Thicker border */
+            padding-bottom: 12px; 
+            margin-top: 40px; 
+            margin-bottom: 25px; 
+            font-size: 1.8em;
+            font-weight: 500;
+        }
+        h3 { 
+            color: #28a745; 
+            margin-top: 30px; 
+            margin-bottom: 15px; 
+            font-size: 1.4em;
+            font-weight: 500;
+        }
+        h4, h5 { 
+            color: #6c757d; 
+            margin-top: 15px; 
+            margin-bottom: 10px; 
+            font-weight: 400;
+        }
+
+        /* Forms Layout */
+        form { 
+            margin-top: 25px; 
+            border: 1px solid #cce5ff; /* Lighter blue border */
+            padding: 30px; /* More padding */
+            border-radius: 10px; 
+            background-color: #eaf6ff; /* Lighter blue background */
+            margin-bottom: 30px; 
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.05); /* Inner shadow */
+        }
+        label { 
+            display: block; 
+            margin-bottom: 10px; 
+            font-weight: 600; 
+            color: #495057; 
+            font-size: 1.1em;
+        }
+        input[type="file"], textarea { 
+            width: calc(100% - 22px); 
+            padding: 12px; 
+            margin-bottom: 20px; 
+            border: 1px solid #9bccf0; /* Consistent blue border */
+            border-radius: 6px; 
+            font-size: 1rem; 
+            box-sizing: border-box;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        input[type="file"]:focus, textarea:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+            outline: none;
+        }
+        textarea { resize: vertical; min-height: 120px; } /* Taller textarea */
+
+        /* Buttons */
+        input[type="submit"] { 
+            background-color: #007bff; 
+            color: white; 
+            padding: 14px 30px; /* Larger padding */
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            font-size: 1.1em; 
+            font-weight: 600;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+        input[type="submit"]:hover { 
+            background-color: #0056b3; 
+            transform: translateY(-1px); /* Slight lift on hover */
+        }
+        input[type="submit"]:active {
+            transform: translateY(0);
+        }
+
+        /* Result Section */
+        .result-section {
+            background-color: #fefefe;
+            border: 1px solid #dcdcdc; /* Lighter border */
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 35px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+        pre {
+            background-color: #f2f4f6; /* Lighter background for code */
+            padding: 20px; /* More padding */
+            border-radius: 6px;
+            overflow-x: auto;
+            white-space: pre-wrap; 
+            word-wrap: break-word; 
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 0.95em;
+            border: 1px solid #e0e0e0;
+            line-height: 1.4;
+        }
+
+        /* Alert/Info Boxes */
+        .error { color: #dc3545; font-weight: bold; }
+        .success-text { color: #28a745; font-weight: bold; }
+        .info-box { 
+            background-color: #e0f7fa; 
+            border-left: 6px solid #2196f3; 
+            padding: 18px; 
+            margin-bottom: 25px; 
+            border-radius: 6px; 
+            color: #0056b3;
+            font-size: 1.05em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body { padding: 15px; }
+            .container { padding: 25px; margin: 15px auto; }
+            h1 { font-size: 2em; }
+            h2 { font-size: 1.5em; }
+            form { padding: 20px; }
+            input[type="file"], textarea { width: 100%; } /* Full width on smaller screens */
+        }
+        @media (max-width: 480px) {
+            h1 { font-size: 1.8em; }
+            h2 { font-size: 1.3em; }
+            input[type="submit"] { width: 100%; padding: 12px; font-size: 1em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Multi-Format Autonomous AI System</h1>
+        <p class="info-box">This system processes inputs from Email, JSON, and PDF, classifies them by format and business intent, routes them to specialized agents, and dynamically chains follow-up actions based on extracted data.</p>
+
+        <form action="/ui_upload" method="post" enctype="multipart/form-data">
+            <h2>Upload File (.eml, .pdf, .json)</h2>
+            <label for="file">Select File:</label>
+            <input type="file" id="file" name="file" accept=".eml,.pdf,.json,application/json">
+            <input type="submit" value="Upload File">
+        </form>
+
+        <form action="/ui_upload" method="post">
+            <h2>Provide Raw Text (e.g., Email content)</h2>
+            <label for="raw_text">Enter Raw Text:</label>
+            <textarea id="raw_text" name="raw_text" rows="10" placeholder="Subject: Urgent Complaint about order #XYZ987..."></textarea>
+            <input type="submit" value="Process Raw Text">
+        </form>
+
+        <form action="/ui_upload" method="post">
+            <h2>Provide JSON Data (Webhook Simulation)</h2>
+            <label for="json_data">Enter JSON:</label>
+            <textarea id="json_data" name="json_data" rows="10" placeholder='{"transaction_id": "TXN_FRAUD_123", "amount": 9999.99, "user_id": "USER_XYZ", "risk_score": 0.95, "ip_address": "192.168.1.1"}'></textarea>
+            <input type="submit" value="Process JSON">
+        </form>
+
+        <div id="resultDisplay" class="result-section">
+            {% if result %}
+                <h2 style="color: #007bff;">Raw Server Response</h2>
+                <p><em>(Structured display is currently unavailable due to server-side JSON formatting issues. Please see the raw response below.)</em></p>
+                <pre>{{ result }}</pre>
+            {% elif error %}
+                <h2 class="error">Error from Server</h2>
+                <pre>{{ error }}</pre>
+            {% endif %}
+        </div>
+    </div>
+
+    </body>
+</html>

@@ -1,0 +1,9 @@
+{
+    "transaction_id": "TXN_FRAUD_98765",
+    "amount": 12500.50,
+    "user_id": "USR_DANGER_123",
+    "risk_score": 0.92,
+    "ip_address": "192.168.1.100",
+    "device_fingerprint": "abc-123-def-456",
+    "location": "Nigeria"
+  }
