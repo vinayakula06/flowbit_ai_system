@@ -202,6 +202,8 @@ We welcome contributions! Feel free to fork, improve, or submit issues.
 ![image](https://github.com/user-attachments/assets/2ee93d52-1a09-49e2-91c3-02236f714ed9)
 ## output for JSON file:
 ![image](https://github.com/user-attachments/assets/b622a7bf-e8ca-41a0-bc30-dd9a1bb359c2)
+## output for DB Browser for SQLite:
+![Screenshot 2025-06-01 230052](https://github.com/user-attachments/assets/0f9f0852-f485-4d88-b67b-659a83841e13)
 
 
 
