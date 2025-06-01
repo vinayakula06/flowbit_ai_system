@@ -4,7 +4,7 @@
 
 ## 📌 Objective
 
-This project implements a **multi-agent AI system** that can:
+This project implements a *multi-agent AI system* that can:
 
 * Accept **multiple input formats**: Email (`.eml`), JSON, and PDF.
 * Automatically **classify input type** and **business intent**.
